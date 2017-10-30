@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<form action="reply.php">
+	名前:<input type="text" name="name"/><br/>
+	<input type="submit"/>
+</form>
+	<form method="post" action="reply0.php">
+		ユーザーID:<input type="text" name="UserID"/><br/>
+		パスワード:<input type="password" name="pass"/><br/>
+		<input type="submit" value="OK"/>
+</form>
+	<form method="post" action="reply0.php">
+		ユーザーID:<input type="text" name="UserID"/><br/>
+		パスワード:<input type="password" name="pass"/><br/>
+		<input type="submit" value="OK"/>
+		<input type="reset" value="cancel"/>
+</form>
+<form action="reply.php" method="get">
+	<input type="checkbox" name="name1"
+			value="apple" checked="checked" />APPLE
+	<input type="checkbox" name="name2" value="grape" />GRAPE
+	<input type="checkbox" name="name3" value="peach" />PEACH
+	<br/>
+	<input type="submit" value="OK"/>
+</form>
+<form action="reply.php" method="get">
+	<input type="radio" name="name" value="apple" checked="checked" />APPLE
+	<input type="radio" name="name" value="grape" />GRAPE
+	<input type="radio" name="name" value="peach" />PEACH
+	<br/>
+	<input type="submit" value="OK"/>
+</form>
+<form action="reply.php" method="get">
+	コース名:
+	<select name="corse">
+			<option value="ope1">オペレーション基礎</option>
+			<option value="ope2">オペレーション応用</option>
+			<option value="sysman" selected="selected">システム管理</option>
+			<option value="netman">ネットワーク管理</option>
+	</select>
+	<br/>
+	<input type="submit" value="OK"/>
+</form>
