@@ -3,10 +3,6 @@ body {
   background-size: cover;
 }
 
-div {
-  margin: 120px 0;
-  text-align: center;
-}
 p {
   font-family: Meiryo, "Hiragino Kaku Gothic Pro W3", Courier New, sans-serif;
   line-height: 1.5;
@@ -16,16 +12,35 @@ p {
 
 h1 {
   padding: .25em 0 .5em .75em;
-  border-left: 6px solid darkorange;
-  border-bottom: 1px solid darkorange;
+  border-left: 6px solid snow;
+  border-bottom: 1px solid snow;
 }
 
 h2 {
-  padding-bottom: .5em;
+  padding: .25em 0 .5em .75em;
+  border-left: 6px solid snow;
   border-bottom: 1px solid #ccc;
 }
 h2:first-letter {
   margin-right: .1em;
   font-size: 1.5em;
+}
+
+div#header{width:100%;}
+
+div#main{
+	width:78%;
+	float:right;
+}
+
+div#navi{
+	border:1px solid snow;
+	width:20%;
+	float:left;
+}
+
+div#footer{
+	clear:both;
+	font-size:90%;
 }
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>リストボックス</title>
+<form action="reply0.php"method="get">
+	コース名：
+	<select size="4" name="corst[]" multiple="multiple">
+		<option value="ope1">オペレーション基礎</option>
+		<option value="ope2">オペレーション応用</option>
+		<option value="sysman">システム管理</option>
+		<option value="netman">ネットワーク管理</option>
+		<option value="tuning">性能管理</option>
+		<option value="trouble">障害対策</option>
+	</select>
+	<input type="submit" value="ok">
+</form>
+<form action="reply.php"method="post">
+	<textarea name="letter" cols="50" rows="10">
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ああああああああああああああああああああああああああああああああああああああああああああああ
+	</textarea>
+	<input type="submit" value="ok">
+</form>
+<form action="dummy">
+	date<input type="date" name="name" />
+		<input type="time" name="name" />
+	<hr/>
+	range<input type="range" min="0" max="10" name="rangevalue" />
+	<!-- output要素はrange入力値を表示する -->
+	<output onformChange="value=form.elements.rangevalue.value">
+	</output>
+	<hr/>
+	required属性<input type="text" name="name" required="required" />
+	<hr/>
+	placeholderインプット要素
+	<input type="text" name="name"
+	placeholder="ここに入力" />
+	<hr/>
+	placeholderテキストエリア要素
+	<textarea cols="20" rows="3"
+	placeholder="ここに入力"></textarea>
+	<input type="submit" value="ok" />
+</form>

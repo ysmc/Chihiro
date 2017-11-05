@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<title>社員アンケート</title>
+	<link rel="stylesheet" type="text/css" href="renshu.css">
+	
+	<script>
+	<!--
+	function inputCheck(){
+	if(document.formoftable.user_name.value == ""  || document.formoftable.user_tel.value == ""){
+	alert("氏名と内線番号は必ず入力してください！");
+	return false;
+	}else{
+	alert("情報を送信します。");
+	return true;
+	document.formoftable.submit();
+	}
+	
+	}
+	-->
+	</script>
+	
+</head>
+<body>
+<div id="header">
+<h1>社員アンケート</h1>
+</div>
+<div id="navi">
+	<li><a href="TOP.html">TOP</a></li>
+	<li>お知らせ</li>
+	<li><a href="questionnaire.html">社員アンケート</a></li>
+</div>
+<div id="main">
+<form action="test.php"method="post" name="formoftable">
+<table border="1" bgcolor="snow">
+	<tr><td>氏名</td><td><input type="text" name="user_name" size="23" /></td></tr>
+	<tr><td>性別</td><td><input type="radio" name="user_gender" value="man" checked="checked" />男 <input type="radio" name="user_gender" value="woman" />女 </td></th>
+	<tr><td>部署名</td><td><input type="text" name="user_dept" size="23" /></td></tr>
+	<tr><td>内線番号</td><td><input type="text" name="user_tel" maxlength="5" /></td></tr>
+	<tr><td>E-mail</td><td><input type="text" name="user_mail" size="64" /></td></tr>
+	<tr><td>自由記入欄</td><td><textarea name="user_free" cols="64" rows="2"> </textarea></td></tr>
+	<tr><td><input type="submit" value="送信" onClick="return inputCheck()"/><input type="reset" value="取消" /></td></tr>
+</table>
+</div>
+</body>
+</html>
