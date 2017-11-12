@@ -1,4 +1,4 @@
-class StudentCardExample{
+public class StudentCardExample{
 	int id;
 	String name;
 	
